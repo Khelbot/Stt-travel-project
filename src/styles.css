@@ -7,6 +7,15 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -54,6 +63,42 @@ header a {
   margin-top: 32px;
   line-height: 1.5;
 }
+main {
+  background-color: white;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #272044;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  opacity: 0.3px;
+  margin: 0;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #272044;
+  opacity: 0.7px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.img-responsive {
+  max-width: 100%;
+}
 
 footer {
   color: white;
@@ -64,16 +109,10 @@ footer {
     url("../images/footer.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.grid {
-  display: grid;
+
+.grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 64px;
 }
 
 footer h3 {
@@ -127,5 +166,14 @@ footer a:hover {
 
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
