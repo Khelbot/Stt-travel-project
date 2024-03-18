@@ -228,6 +228,9 @@ footer {
   max-width: 370px;
   max-height: 370px;
 }
+.filtered-photo {
+  filter: grayscale(80%);
+}
 
 .instagram-embeds {
   width: 100%;
