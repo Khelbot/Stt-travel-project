@@ -198,6 +198,26 @@ footer {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.thirtuary {
+  background-color: white;
+}
+
+.thirtuary h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #272044;
+  opacity: 0.3;
+}
+
+.thirtuary h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 footer h3 {
   font-weight: 700;
   font-size: 20px;
