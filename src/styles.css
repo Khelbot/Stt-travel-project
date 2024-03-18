@@ -84,7 +84,7 @@ main h3 {
   color: #272044;
   letter-spacing: 5px;
   text-transform: uppercase;
-  opacity: 0.3px;
+  opacity: 0.3;
   margin: 0;
 }
 
@@ -100,6 +100,7 @@ main h5 {
   font-weight: 700;
   line-height: 1;
   color: #272044;
+  margin: 0;
 }
 
 main p {
@@ -107,7 +108,7 @@ main p {
   font-size: 16px;
   line-height: 24px;
   color: #272044;
-  opacity: 0.7px;
+  opacity: 0.7;
   margin: 0;
 }
 
@@ -116,6 +117,10 @@ main p {
 }
 .img-responsive {
   max-width: 100%;
+}
+
+.primary p {
+  margin-top: 16px;
 }
 
 section.secondary {
@@ -129,7 +134,7 @@ section.secondary {
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #272044;
-  opacity: 0.3px;
+  opacity: 0.3;
 }
 
 .secondary h2 {
@@ -137,20 +142,24 @@ section.secondary {
   font-weight: 700;
   line-height: 1.5;
 }
+.secondary h4 {
+  font-size: 24px;
+}
+
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
   background-color: white;
-  margin-top: 30px;
+  margin-top: 30px 0;
 }
 .card-body {
-  padding: 30px;
+  padding: 0 30px 30px;
 }
 
 .card-footer {
-  padding: 30px;
+  padding: 0 30px 30px;
 }
 
 .btn {
@@ -164,7 +173,6 @@ section.secondary {
   background-color: #462cb2;
   text-transform: uppercase;
   text-decoration: none;
-  width: 306px;
 }
 
 footer {
