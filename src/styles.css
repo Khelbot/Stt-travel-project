@@ -183,21 +183,6 @@ section.secondary {
   text-decoration: none;
 }
 
-footer {
-  color: white;
-  background-image: linear-gradient(
-      rgba(39, 32, 68, 0.9),
-      rgba(39, 32, 68, 0.9)
-    ),
-    url("../images/footer.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.grid-3-columns-with-first-narrow {
-  grid-template-columns: 1fr 2fr 2fr;
-}
-
 .thirtuary {
   background-color: white;
 }
@@ -218,22 +203,63 @@ footer {
   line-height: 1.5;
 }
 
-.lisbon-photos {
+.table-grid {
   margin: auto;
   border-spacing: 30px;
   margin-bottom: 60px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.individual-photos {
-  max-width: 370px;
-  max-height: 370px;
+.table-grid img {
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
 }
+
 .filtered-photo {
   filter: grayscale(80%);
 }
 
 .instagram-embeds {
   width: 100%;
+}
+
+.fourth {
+  background-color: #f8f8f8;
+}
+
+.fourth h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #272044;
+  opacity: 0.3;
+}
+
+.fourth h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 footer h3 {
@@ -303,5 +329,9 @@ footer a:hover {
 
   .embed {
     aspect-ratio: 16/9;
+  }
+
+  .table-grid {
+    border-collapse: collapse;
   }
 }
